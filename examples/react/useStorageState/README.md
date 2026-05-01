@@ -1,6 +1,6 @@
 # useStorageState Examples
 
-This example demonstrates the TanStack Persister storage state hooks:
+This example demonstrates the TanStack Persist storage state hooks:
 
 - **App1**: `useStorageState` - Generic storage state hook with localStorage
 - **App2**: `useLocalStorageState` - Convenience hook for localStorage

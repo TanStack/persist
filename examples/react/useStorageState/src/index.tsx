@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import {
   useLocalStorageState,
   useSessionStorageState,
-} from '@tanstack/react-persister/storage-persister'
+} from '@tanstack/react-persist/storage-persister'
 
 // App2: useLocalStorageState hook
 function App2() {
@@ -36,7 +36,7 @@ function App2() {
         marginBottom: '20px',
       }}
     >
-      <h1>TanStack Persister useLocalStorageState Example</h1>
+      <h1>TanStack Persist useLocalStorageState Example</h1>
       <p>This example uses the useLocalStorageState hook for a todo list</p>
 
       <div style={{ marginBottom: '20px' }}>
@@ -175,7 +175,7 @@ function App3() {
         marginBottom: '20px',
       }}
     >
-      <h1>TanStack Persister useSessionStorageState Example</h1>
+      <h1>TanStack Persist useSessionStorageState Example</h1>
       <p>
         This example uses the useSessionStorageState hook for a shopping cart
       </p>

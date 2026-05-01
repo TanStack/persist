@@ -1,8 +1,12 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "main",
+  "nxCloudId": "",
   "useInferencePlugins": false,
   "parallel": 5,
+  "tui": {
+    "enabled": false
+  },
   "namedInputs": {
     "sharedGlobals": [
       "{workspaceRoot}/.nvmrc",
@@ -21,6 +25,14 @@
     ]
   },
   "targetDefaults": {
+    "lint": {
+      "cache": true,
+      "inputs": ["default", "{workspaceRoot}/eslint.config.js"]
+    },
+    "lint:fix": {
+      "cache": true,
+      "inputs": ["default", "{workspaceRoot}/eslint.config.js"]
+    },
     "test:lib": {
       "cache": true,
       "dependsOn": ["^build"],
@@ -37,16 +49,15 @@
       "dependsOn": ["^build"],
       "inputs": ["default", "^production"]
     },
-    "test:build": {
-      "cache": true,
-      "dependsOn": ["build"],
-      "inputs": ["production"]
-    },
     "build": {
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"],
       "outputs": ["{projectRoot}/build", "{projectRoot}/dist"]
+    },
+    "test:docs": {
+      "cache": true,
+      "inputs": ["{workspaceRoot}/docs/**/*"]
     },
     "test:knip": {
       "cache": true,
@@ -56,5 +67,6 @@
       "cache": true,
       "inputs": ["{workspaceRoot}/**/package.json"]
     }
-  }
+  },
+  "analytics": false
 }

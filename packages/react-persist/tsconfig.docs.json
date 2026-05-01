@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@tanstack/persist": ["../persist/src"]
+    }
+  },
+  "include": ["src"]
+}

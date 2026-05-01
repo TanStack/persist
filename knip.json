@@ -3,7 +3,7 @@
   "ignoreDependencies": ["@faker-js/faker"],
   "ignoreWorkspaces": ["examples/**"],
   "workspaces": {
-    "packages/react-persister": {
+    "packages/react-persist": {
       "ignore": []
     }
   }

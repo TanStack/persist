@@ -1,0 +1,92 @@
+{
+  "name": "@tanstack/react-persist",
+  "version": "0.1.1",
+  "description": "Utilities for persisting state to local storage, session storage, indexedDB, and more.",
+  "author": "Tanner Linsley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TanStack/persister.git",
+    "directory": "packages/react-persist"
+  },
+  "homepage": "https://tanstack.com/persist",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/tannerlinsley"
+  },
+  "keywords": [
+    "react",
+    "persist",
+    "storage",
+    "localstorage",
+    "sessionstorage",
+    "indexeddb"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./async-persister": {
+      "import": "./dist/async-persister/index.js",
+      "require": "./dist/async-persister/index.cjs"
+    },
+    "./compare": {
+      "import": "./dist/compare/index.js",
+      "require": "./dist/compare/index.cjs"
+    },
+    "./persister": {
+      "import": "./dist/persister/index.js",
+      "require": "./dist/persister/index.cjs"
+    },
+    "./storage-persister": {
+      "import": "./dist/storage-persister/index.js",
+      "require": "./dist/storage-persister/index.cjs"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.js",
+      "require": "./dist/utils/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "clean": "premove ./build ./dist",
+    "lint": "eslint ./src",
+    "test:eslint": "eslint ./src",
+    "test:lib": "vitest --passWithNoTests",
+    "test:lib:dev": "pnpm test:lib --watch",
+    "test:types": "tsc",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@tanstack/persist": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "^5.6.6",
+    "@types/react": "^19.2.14",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint-plugin-react-compiler": "19.1.0-rc.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "react": "^19.2.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  }
+}

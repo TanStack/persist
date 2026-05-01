@@ -92,8 +92,8 @@ check_framework() {
     echo "----------------------------------------"
     
     # Get actual hooks from packages
-    local package_path="packages/$framework-persister/src"
-    local persister_path="packages/$framework-persister/src"
+    local package_path="packages/$framework-persist/src"
+    local persister_path="packages/$framework-persist/src"
     
     # Create temporary files
     local temp_dir=$(mktemp -d)

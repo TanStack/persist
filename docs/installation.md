@@ -3,22 +3,22 @@ title: Installation
 id: installation
 ---
 
-You can install TanStack Persister with any [NPM](https://npmjs.com) package manager.
+You can install TanStack Persist with any [NPM](https://npmjs.com) package manager.
 
 Only install one of the following packages depending on your use case:
 
 ## React
 
 ```sh
-npm install @tanstack/react-persister
+npm install @tanstack/react-persist
 ```
 
-TanStack Persister is compatible with React v16.8+
+TanStack Persist is compatible with React v16.8+
 
 ## Vanilla JS
 
 ```sh
-npm install @tanstack/persister
+npm install @tanstack/persist
 ```
 
-Install the the core `@tanstack/persister` package to use with any framework or without a framework. Each framework package up above will also re-export everything from this core package.
+Install the the core `@tanstack/persist` package to use with any framework or without a framework. Each framework package up above will also re-export everything from this core package.

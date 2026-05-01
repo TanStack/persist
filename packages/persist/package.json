@@ -1,0 +1,78 @@
+{
+  "name": "@tanstack/persist",
+  "version": "0.1.1",
+  "description": "Utilities for persisting state to local storage, session storage, indexedDB, and more.",
+  "author": "Tanner Linsley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TanStack/persister.git",
+    "directory": "packages/persist"
+  },
+  "homepage": "https://tanstack.com/persist",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/tannerlinsley"
+  },
+  "keywords": [
+    "state",
+    "persist",
+    "local-storage",
+    "session-storage",
+    "indexed-db",
+    "cache"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./async-persister": {
+      "import": "./dist/async-persister.js",
+      "require": "./dist/async-persister.cjs"
+    },
+    "./compare": {
+      "import": "./dist/compare.js",
+      "require": "./dist/compare.cjs"
+    },
+    "./persister": {
+      "import": "./dist/persister.js",
+      "require": "./dist/persister.cjs"
+    },
+    "./storage-persister": {
+      "import": "./dist/storage-persister.js",
+      "require": "./dist/storage-persister.cjs"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "require": "./dist/types.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils.js",
+      "require": "./dist/utils.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/",
+    "src"
+  ],
+  "scripts": {
+    "clean": "premove ./build ./dist",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test:eslint": "eslint ./src",
+    "test:lib": "vitest",
+    "test:lib:dev": "pnpm test:lib --watch",
+    "test:types": "tsc",
+    "build": "tsdown"
+  }
+}
