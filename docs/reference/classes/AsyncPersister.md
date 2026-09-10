@@ -3,6 +3,8 @@ id: AsyncPersister
 title: AsyncPersister
 ---
 
+# Abstract Class: AsyncPersister\<TState, TSelected\>
+
 Defined in: [async-persister.ts:11](https://github.com/TanStack/persist/blob/main/packages/persist/src/async-persister.ts#L11)
 
 Abstract class that defines the contract for an asynchronous state persister.

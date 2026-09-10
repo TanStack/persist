@@ -3,6 +3,8 @@ id: PersistedStorage
 title: PersistedStorage
 ---
 
+# Interface: PersistedStorage\<TState, TSelected\>
+
 Defined in: [storage-persister.ts:4](https://github.com/TanStack/persist/blob/main/packages/persist/src/storage-persister.ts#L4)
 
 ## Type Parameters

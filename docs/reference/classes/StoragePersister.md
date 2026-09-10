@@ -3,6 +3,8 @@ id: StoragePersister
 title: StoragePersister
 ---
 
+# Class: StoragePersister\<TState, TSelected\>
+
 Defined in: [storage-persister.ts:143](https://github.com/TanStack/persist/blob/main/packages/persist/src/storage-persister.ts#L143)
 
 A persister that saves state to browser local/session storage.
