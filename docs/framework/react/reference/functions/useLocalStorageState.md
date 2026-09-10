@@ -3,8 +3,6 @@ id: useLocalStorageState
 title: useLocalStorageState
 ---
 
-# Function: useLocalStorageState()
-
 ```ts
 function useLocalStorageState<TValue, TSelected>(
    key, 

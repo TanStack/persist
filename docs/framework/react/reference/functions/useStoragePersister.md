@@ -3,8 +3,6 @@ id: useStoragePersister
 title: useStoragePersister
 ---
 
-# Function: useStoragePersister()
-
 ```ts
 function useStoragePersister<TState, TSelected>(options): StoragePersister<TState, TSelected>;
 ```

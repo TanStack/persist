@@ -3,8 +3,6 @@ id: Persister
 title: Persister
 ---
 
-# Abstract Class: Persister\<TState, TSelected\>
-
 Defined in: [persister.ts:27](https://github.com/TanStack/persist/blob/main/packages/persist/src/persister.ts#L27)
 
 Abstract class that defines the contract for a state persister implementation.

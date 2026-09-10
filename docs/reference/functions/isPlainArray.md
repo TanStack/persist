@@ -3,8 +3,6 @@ id: isPlainArray
 title: isPlainArray
 ---
 
-# Function: isPlainArray()
-
 ```ts
 function isPlainArray(value): boolean;
 ```

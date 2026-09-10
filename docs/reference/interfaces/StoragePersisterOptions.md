@@ -3,8 +3,6 @@ id: StoragePersisterOptions
 title: StoragePersisterOptions
 ---
 
-# Interface: StoragePersisterOptions\<TState, TSelected\>
-
 Defined in: [storage-persister.ts:19](https://github.com/TanStack/persist/blob/main/packages/persist/src/storage-persister.ts#L19)
 
 Configuration options for creating a browser-based state persister.

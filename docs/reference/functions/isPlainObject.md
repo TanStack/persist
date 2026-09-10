@@ -3,8 +3,6 @@ id: isPlainObject
 title: isPlainObject
 ---
 
-# Function: isPlainObject()
-
 ```ts
 function isPlainObject(o): o is Object;
 ```

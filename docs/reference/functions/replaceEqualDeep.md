@@ -3,8 +3,6 @@ id: replaceEqualDeep
 title: replaceEqualDeep
 ---
 
-# Function: replaceEqualDeep()
-
 ```ts
 function replaceEqualDeep<T>(a, b): T;
 ```

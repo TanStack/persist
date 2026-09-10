@@ -3,8 +3,6 @@ id: shallowEqualObjects
 title: shallowEqualObjects
 ---
 
-# Function: shallowEqualObjects()
-
 ```ts
 function shallowEqualObjects<T>(a, b): boolean;
 ```

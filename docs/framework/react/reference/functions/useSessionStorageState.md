@@ -3,8 +3,6 @@ id: useSessionStorageState
 title: useSessionStorageState
 ---
 
-# Function: useSessionStorageState()
-
 ```ts
 function useSessionStorageState<TValue, TSelected>(
    key, 

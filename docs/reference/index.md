@@ -3,8 +3,6 @@ id: "@tanstack/persist"
 title: "@tanstack/persist"
 ---
 
-# @tanstack/persist
-
 ## Classes
 
 - [AsyncPersister](../classes/AsyncPersister.md)
